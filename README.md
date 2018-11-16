@@ -27,6 +27,10 @@ Deploy Prisma GraphQL database endpoint. Make sure you are logged in before runn
 
 # Backend Server
     npm run dev
+    
+## Daily Dev Flow
+    prisma login
+    npm run dev
 
 # Resolvers
 When adding Queries and Mutations, put new ones in schema.graphql first, then in either Query or Mutation accordingly. Adding it to the files in reverse order causes an error (until it is in both files).
