@@ -44,3 +44,5 @@ When adding Queries and Mutations, put new ones in schema.graphql first, then in
 3. Go into /src/schema.graphql (which is the public facing API). Add mutations and queries here that will be used by React.
 4. Create resolvers in either /src/resolvers/Mutation.js or /src/resolvers/Query.js to define the resolver logic for the API calls in schema.graphql.
 
+# ToDo
+1. Add image and largeImage editing to schema.graphql, Query.js, and Mutation.js.
