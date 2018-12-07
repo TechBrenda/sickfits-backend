@@ -46,6 +46,7 @@ When adding Queries and Mutations, put new ones in schema.graphql first, then in
 
 # ToDo
 1. Add image and largeImage editing to schema.graphql, Query.js, and Mutation.js.
+2. Factor out JWT for signing in user on Mutation signup and signin.
 
 # Cookies
 1. In Chrome, turn on Developer tools.
@@ -55,3 +56,8 @@ When adding Queries and Mutations, put new ones in schema.graphql first, then in
 5. Go to https://jwt.io.
 6. Paste value in Encoded text box.
 7. See Decoded values.
+
+# Development workflow
+1. Add to Schema.
+2. Add resolver (Query or Mutation).
+3. Flip over to front end and take it from there.
