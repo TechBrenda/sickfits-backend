@@ -46,3 +46,12 @@ When adding Queries and Mutations, put new ones in schema.graphql first, then in
 
 # ToDo
 1. Add image and largeImage editing to schema.graphql, Query.js, and Mutation.js.
+
+# Cookies
+1. In Chrome, turn on Developer tools.
+2. Open Application tab.
+3. Expand Cookies and select local server.
+4. Double click Value for "token" cookie and copy.
+5. Go to https://jwt.io.
+6. Paste value in Encoded text box.
+7. See Decoded values.
