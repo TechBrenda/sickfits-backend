@@ -28,7 +28,9 @@ Deploy Prisma GraphQL database endpoint. Make sure you are logged in before runn
 # Backend Server
     npm run dev
     
-## Daily Dev Flow
+# Daily Dev Flow
+Set Default Browser to Chrome.
+
     prisma login
     npm run dev
 
