@@ -1,6 +1,6 @@
 # Advanced-React
 
-This is the frontend project for the Wesbos course on Advanced React and GraphQL.
+This is the frontend project for the Wesbos course on Advanced React and GraphQL.  This README contains notes on both how to run the project and interesting things I learned in the course.
 
 # Prisma
 ## Install
@@ -63,3 +63,32 @@ When adding Queries and Mutations, put new ones in schema.graphql first, then in
 1. Add to Schema.
 2. Add resolver (Query or Mutation).
 3. Flip over to front end and take it from there.
+
+# Destructure
+## First Element of Array
+To assign a variable to the first element of an array, declare the variable name with square brackets. 
+ Then that variable can be used without brackets later just like a regular variable.
+ 
+    const [user] = ...
+    if (!user) ...
+    
+## Mutation Data
+Assigning data value in a mutation can use a shortcut if the variables on both sides of the colon are the same name.  This happens when the member variable in the data object is called something like "email" (before the colon) and the code before data (higher scope) has declared a variable of the same name (after the colon).
+
+Instead of typing:
+ 
+    data {
+      email: email
+    }
+
+Instead type:
+
+    data {
+      email
+    }
+
+If you have not destructured the variable into its own object, you still need to include the colon:
+
+    data {
+      email: args.email
+    }
