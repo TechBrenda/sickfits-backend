@@ -92,3 +92,16 @@ If you have not destructured the variable into its own object, you still need to
     data {
       email: args.email
     }
+    
+# Email
+## Dev - Mailtrap
+https://mailtrap.io
+This is blocked at work.  No way around it!
+
+## Prod suggestion: Postmark
+
+## React email template - mjml
+https://mjml.io
+React framework for templating emails
+
+In Wes Bos's Node course, he uses Pug to template and Juice to inline the CSS.
